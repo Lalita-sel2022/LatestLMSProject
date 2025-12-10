@@ -4,6 +4,7 @@ package pageObject;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -132,10 +133,18 @@ public class CreateCasePage {
 	// Method to select multiple owners
 	public void selectOwnerName(String... ownerNames) throws InterruptedException {
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(dropdownOwnerName));
-		element.click();
-//	    dropdownOwnerName.click();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		    // Step 1: Click dropdown properly
+		    WebElement dd = wait.until(ExpectedConditions.elementToBeClickable(dropdownOwnerName));
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", dd);
+		    
+		    // Step 2: Wait for dropdown menu to appear
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(
+		            By.cssSelector("div.dropdown-menu.show")
+		    ));
+
+		    Thread.sleep(1000);  // very important for Bootstrap dropdown
 
 	    for (String nameToSelect : ownerNames) {
 	        for (WebElement option : ownerNameDropdownOptions) {

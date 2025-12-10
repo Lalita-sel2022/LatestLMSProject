@@ -20,10 +20,10 @@ public class CaseRegionAssginPage
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//ul[@class='region_tree_box']/li/span")
-	public WebElement parentRegion;
+	@FindBy(xpath="//span[contains(@class,'parent_cat')]/span[contains(@class,'icon-circle-plus-fill')]")
+	public WebElement parentRegionexpend;
 	
-	@FindBy(xpath="//input[@class='c_box']")
+	@FindBy(xpath="//input[contains(@class,'c_box')]")
 	public List<WebElement> resionCheckboxs;
 	
 	@FindBy(xpath="(//button[@id='save region_button'])[1]")
@@ -37,19 +37,32 @@ public class CaseRegionAssginPage
     public void selectAllRegions() throws InterruptedException
     {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    	wait.until(ExpectedConditions.elementToBeClickable(parentRegion)).click();
+    	wait.until(ExpectedConditions.elementToBeClickable(parentRegionexpend)).click();
 //		((JavascriptExecutor)driver).executeScript("arguments[0].click();", parentRegion);
 		Thread.sleep(2000);
-		for(int i = 0; i < resionCheckboxs.size(); i++)
-		{
-			WebElement cb = resionCheckboxs.get(i);
-		    if (cb.isDisplayed() && cb.isEnabled()) 
+//		for(int i = 0; i < resionCheckboxs.size(); i++)
+//		{
+//			WebElement cb = resionCheckboxs.get(i);
+//		    if (cb.isDisplayed() && cb.isEnabled()) 
+//		    {
+//		        cb.click();
+//			
+//			}
+//		    Thread.sleep(2000);
+//		}
+		   for (WebElement cb : resionCheckboxs) 
 		    {
-		        cb.click();
-			
-			}
-		    Thread.sleep(2000);
-		}
+		        // ignore hidden checkboxes
+		        if (cb.isDisplayed() && cb.isEnabled()) 
+		        {
+		            // IMPORTANT FIX: Only click if NOT selected
+		            if (!cb.isSelected()) 
+		            {
+		                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cb);
+		                Thread.sleep(400);
+		            }
+		        }
+		    }
 		
     }
     public void clickResionSaveButton()

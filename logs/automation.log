@@ -1,33 +1,4 @@
-2025-12-02 18:08:40 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
-2025-12-02 18:08:40 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
-2025-12-02 18:08:40 INFO  CreateCaseTest:92 - Enter valid credential
-2025-12-02 18:08:42 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
-2025-12-02 18:08:42 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
-2025-12-02 18:08:42 INFO  CreateCaseTest:22 - Validate case creation
-2025-12-02 18:08:46 INFO  CreateCaseTest:24 - Select Create Case menu
-2025-12-02 18:08:49 INFO  CreateCaseTest:31 - Create Case page successfully loaded
-2025-12-02 18:08:49 INFO  CreateCaseTest:32 - Select entity from entity dropdown
-2025-12-02 18:08:50 INFO  CreateCaseTest:34 - Select Bulk Test Entity
-2025-12-02 18:08:50 INFO  CreateCaseTest:36 - Enter case name
-2025-12-02 18:08:50 ERROR CreateCaseTest:72 - Test Failed
-2025-12-02 18:10:18 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
-2025-12-02 18:10:18 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
-2025-12-02 18:10:18 INFO  CreateCaseTest:92 - Enter valid credential
-2025-12-02 18:10:20 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
-2025-12-02 18:10:20 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
-2025-12-02 18:10:20 INFO  CreateCaseTest:22 - Validate case creation
-2025-12-02 18:10:23 INFO  CreateCaseTest:24 - Select Create Case menu
-2025-12-02 18:10:27 INFO  CreateCaseTest:31 - Create Case page successfully loaded
-2025-12-02 18:10:27 INFO  CreateCaseTest:32 - Select entity from entity dropdown
-2025-12-02 18:10:28 INFO  CreateCaseTest:34 - Select Bulk Test Entity
-2025-12-02 18:10:29 INFO  CreateCaseTest:36 - Enter case name
-2025-12-02 18:10:51 INFO  CreateCaseTest:38 - Select Owner Names
-2025-12-02 18:10:52 INFO  CreateCaseTest:40 - Select case status
-2025-12-02 18:10:52 INFO  CreateCaseTest:42 - Select case Priority
-2025-12-02 18:10:53 INFO  CreateCaseTest:44 - Select case start date
-2025-12-02 18:10:53 INFO  CreateCaseTest:46 - Select case group
-2025-12-02 18:10:53 INFO  CreateCaseTest:48 - Enter caseID
-2025-12-02 18:10:55 INFO  CreateCaseTest:50 - Select Relevant Period
-2025-12-02 18:10:55 INFO  CreateCaseTest:53 - Enter registration No
-2025-12-02 18:10:55 INFO  CreateCaseTest:55 - Click on next button
-2025-12-02 18:11:15 ERROR CreateCaseTest:72 - Test Failed
+2025-12-10 13:18:45 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 13:18:45 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 13:18:45 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 13:18:56 ERROR CreateCaseTest:103 - Test Failed

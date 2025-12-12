@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger; 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -43,7 +44,10 @@ public static Properties pro;
 		if(browser.equalsIgnoreCase(browser))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver= new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--user-data-dir=/tmp/profile_" + System.currentTimeMillis());
+			driver = new ChromeDriver(options);
+//			driver= new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}else if(browser.equalsIgnoreCase("firefox"))

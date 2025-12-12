@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-10T15:50:05 IST" name="Suite" finished-at="2025-12-10T15:50:49 IST" duration-ms="44271">
+  <suite started-at="2025-12-10T16:00:17 IST" name="Suite" finished-at="2025-12-10T16:00:57 IST" duration-ms="40493">
     <groups>
     </groups>
-    <test started-at="2025-12-10T15:50:05 IST" name="Test on Firefox" finished-at="2025-12-10T15:50:49 IST" duration-ms="44271">
+    <test started-at="2025-12-10T16:00:17 IST" name="Test on Firefox" finished-at="2025-12-10T16:00:57 IST" duration-ms="40493">
       <class name="testClasses.CreateCaseTest">
-        <test-method is-config="true" signature="startUp(java.lang.String)[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T15:50:06 IST" name="startUp" finished-at="2025-12-10T15:50:12 IST" duration-ms="6196" status="PASS">
+        <test-method is-config="true" signature="startUp(java.lang.String)[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:17 IST" name="startUp" finished-at="2025-12-10T16:00:21 IST" duration-ms="3600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="loginMethod()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T15:50:12 IST" name="loginMethod" finished-at="2025-12-10T15:50:14 IST" duration-ms="2206" status="PASS">
+        <test-method is-config="true" signature="loginMethod()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:21 IST" name="loginMethod" finished-at="2025-12-10T16:00:23 IST" duration-ms="2257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method signature="VerifyThatTheCaseIsSuccessfullyCreated()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T15:50:14 IST" name="VerifyThatTheCaseIsSuccessfullyCreated" finished-at="2025-12-10T15:50:49 IST" duration-ms="35440" status="PASS">
+        <test-method signature="VerifyThatTheCaseIsSuccessfullyCreated()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:23 IST" name="VerifyThatTheCaseIsSuccessfullyCreated" finished-at="2025-12-10T16:00:57 IST" duration-ms="34246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyThatTheCaseIsSuccessfullyCreated -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T15:50:49 IST" name="teardown" finished-at="2025-12-10T15:50:49 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:57 IST" name="teardown" finished-at="2025-12-10T16:00:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

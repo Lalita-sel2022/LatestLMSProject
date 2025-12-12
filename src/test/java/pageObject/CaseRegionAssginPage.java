@@ -59,7 +59,7 @@ public class CaseRegionAssginPage
 		            if (!cb.isSelected()) 
 		            {
 		                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cb);
-		                Thread.sleep(400);
+		                Thread.sleep(1000);
 		            }
 		        }
 		    }

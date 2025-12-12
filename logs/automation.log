@@ -200,3 +200,133 @@
 2025-12-10 15:50:42 INFO  CreateCaseTest:66 - Click on save button
 2025-12-10 15:50:49 INFO  CreateCaseTest:68 - Confirm pop-up
 2025-12-10 15:50:49 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........
+2025-12-10 15:55:07 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 15:55:07 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 15:55:07 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 15:55:10 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
+2025-12-10 15:55:10 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
+2025-12-10 15:55:10 INFO  CreateCaseTest:22 - Validate case creation
+2025-12-10 15:55:13 INFO  CreateCaseTest:24 - Select Create Case menu
+2025-12-10 15:55:15 INFO  CreateCaseTest:31 - Create Case page successfully loaded
+2025-12-10 15:55:15 INFO  CreateCaseTest:32 - Select entity from entity dropdown
+2025-12-10 15:55:16 INFO  CreateCaseTest:34 - Select Bulk Test Entity
+2025-12-10 15:55:16 INFO  CreateCaseTest:36 - Enter case name
+2025-12-10 15:55:19 INFO  CreateCaseTest:38 - Select Owner Names
+2025-12-10 15:55:19 INFO  CreateCaseTest:40 - Select case status
+2025-12-10 15:55:20 INFO  CreateCaseTest:42 - Select case Priority
+2025-12-10 15:55:20 INFO  CreateCaseTest:44 - Select case start date
+2025-12-10 15:55:21 INFO  CreateCaseTest:46 - Select case group
+2025-12-10 15:55:21 INFO  CreateCaseTest:48 - Enter caseID
+2025-12-10 15:55:23 INFO  CreateCaseTest:50 - Select Relevant Period
+2025-12-10 15:55:23 INFO  CreateCaseTest:53 - Enter registration No
+2025-12-10 15:55:23 INFO  CreateCaseTest:55 - Click on next button
+2025-12-10 15:55:29 INFO  CreateCaseTest:58 - Select laws
+2025-12-10 15:55:29 INFO  CreateCaseTest:60 - Click on save button
+2025-12-10 15:55:38 INFO  CreateCaseTest:64 - Select regions
+2025-12-10 15:55:38 INFO  CreateCaseTest:66 - Click on save button
+2025-12-10 15:55:43 INFO  CreateCaseTest:68 - Confirm pop-up
+2025-12-10 15:55:43 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........
+2025-12-10 15:57:37 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 15:57:37 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 15:57:37 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 15:57:39 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
+2025-12-10 15:57:39 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
+2025-12-10 15:57:39 INFO  CreateCaseTest:22 - Validate case creation
+2025-12-10 15:57:42 INFO  CreateCaseTest:24 - Select Create Case menu
+2025-12-10 15:57:44 INFO  CreateCaseTest:31 - Create Case page successfully loaded
+2025-12-10 15:57:44 INFO  CreateCaseTest:32 - Select entity from entity dropdown
+2025-12-10 15:57:46 INFO  CreateCaseTest:34 - Select Bulk Test Entity
+2025-12-10 15:57:46 INFO  CreateCaseTest:36 - Enter case name
+2025-12-10 15:57:48 INFO  CreateCaseTest:38 - Select Owner Names
+2025-12-10 15:57:48 INFO  CreateCaseTest:40 - Select case status
+2025-12-10 15:57:49 INFO  CreateCaseTest:42 - Select case Priority
+2025-12-10 15:57:49 INFO  CreateCaseTest:44 - Select case start date
+2025-12-10 15:57:50 INFO  CreateCaseTest:46 - Select case group
+2025-12-10 15:57:50 INFO  CreateCaseTest:48 - Enter caseID
+2025-12-10 15:57:52 INFO  CreateCaseTest:50 - Select Relevant Period
+2025-12-10 15:57:52 INFO  CreateCaseTest:53 - Enter registration No
+2025-12-10 15:57:52 INFO  CreateCaseTest:55 - Click on next button
+2025-12-10 15:57:57 INFO  CreateCaseTest:58 - Select laws
+2025-12-10 15:57:58 INFO  CreateCaseTest:60 - Click on save button
+2025-12-10 15:58:06 INFO  CreateCaseTest:64 - Select regions
+2025-12-10 15:58:06 INFO  CreateCaseTest:66 - Click on save button
+2025-12-10 15:58:07 INFO  CreateCaseTest:68 - Confirm pop-up
+2025-12-10 15:58:07 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........
+2025-12-10 15:58:38 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 15:58:38 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 15:58:38 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 15:58:40 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
+2025-12-10 15:58:40 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
+2025-12-10 15:58:40 INFO  CreateCaseTest:22 - Validate case creation
+2025-12-10 15:58:44 INFO  CreateCaseTest:24 - Select Create Case menu
+2025-12-10 15:58:45 INFO  CreateCaseTest:31 - Create Case page successfully loaded
+2025-12-10 15:58:45 INFO  CreateCaseTest:32 - Select entity from entity dropdown
+2025-12-10 15:58:47 INFO  CreateCaseTest:34 - Select Bulk Test Entity
+2025-12-10 15:58:47 INFO  CreateCaseTest:36 - Enter case name
+2025-12-10 15:58:49 INFO  CreateCaseTest:38 - Select Owner Names
+2025-12-10 15:58:49 INFO  CreateCaseTest:40 - Select case status
+2025-12-10 15:58:50 INFO  CreateCaseTest:42 - Select case Priority
+2025-12-10 15:58:51 INFO  CreateCaseTest:44 - Select case start date
+2025-12-10 15:58:51 INFO  CreateCaseTest:46 - Select case group
+2025-12-10 15:58:51 INFO  CreateCaseTest:48 - Enter caseID
+2025-12-10 15:58:53 INFO  CreateCaseTest:50 - Select Relevant Period
+2025-12-10 15:58:53 INFO  CreateCaseTest:53 - Enter registration No
+2025-12-10 15:58:53 INFO  CreateCaseTest:55 - Click on next button
+2025-12-10 15:58:58 INFO  CreateCaseTest:58 - Select laws
+2025-12-10 15:58:59 INFO  CreateCaseTest:60 - Click on save button
+2025-12-10 15:59:07 INFO  CreateCaseTest:64 - Select regions
+2025-12-10 15:59:07 INFO  CreateCaseTest:66 - Click on save button
+2025-12-10 15:59:08 INFO  CreateCaseTest:68 - Confirm pop-up
+2025-12-10 15:59:08 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........
+2025-12-10 16:00:21 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 16:00:21 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 16:00:21 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 16:00:23 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
+2025-12-10 16:00:23 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
+2025-12-10 16:00:23 INFO  CreateCaseTest:22 - Validate case creation
+2025-12-10 16:00:26 INFO  CreateCaseTest:24 - Select Create Case menu
+2025-12-10 16:00:28 INFO  CreateCaseTest:31 - Create Case page successfully loaded
+2025-12-10 16:00:28 INFO  CreateCaseTest:32 - Select entity from entity dropdown
+2025-12-10 16:00:30 INFO  CreateCaseTest:34 - Select Bulk Test Entity
+2025-12-10 16:00:30 INFO  CreateCaseTest:36 - Enter case name
+2025-12-10 16:00:32 INFO  CreateCaseTest:38 - Select Owner Names
+2025-12-10 16:00:32 INFO  CreateCaseTest:40 - Select case status
+2025-12-10 16:00:33 INFO  CreateCaseTest:42 - Select case Priority
+2025-12-10 16:00:34 INFO  CreateCaseTest:44 - Select case start date
+2025-12-10 16:00:34 INFO  CreateCaseTest:46 - Select case group
+2025-12-10 16:00:34 INFO  CreateCaseTest:48 - Enter caseID
+2025-12-10 16:00:36 INFO  CreateCaseTest:50 - Select Relevant Period
+2025-12-10 16:00:36 INFO  CreateCaseTest:53 - Enter registration No
+2025-12-10 16:00:36 INFO  CreateCaseTest:55 - Click on next button
+2025-12-10 16:00:41 INFO  CreateCaseTest:58 - Select laws
+2025-12-10 16:00:42 INFO  CreateCaseTest:60 - Click on save button
+2025-12-10 16:00:52 INFO  CreateCaseTest:64 - Select regions
+2025-12-10 16:00:52 INFO  CreateCaseTest:66 - Click on save button
+2025-12-10 16:00:57 INFO  CreateCaseTest:68 - Confirm pop-up
+2025-12-10 16:00:57 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........
+2025-12-10 19:07:03 INFO  CreateCaseTest:88 - ..........Starting Verify_Login...........
+2025-12-10 19:07:03 INFO  CreateCaseTest:90 - Starting Verify_Login_Functionality
+2025-12-10 19:07:03 INFO  CreateCaseTest:92 - Enter valid credential
+2025-12-10 19:07:06 INFO  CreateCaseTest:106 - ..........Finished Verify_Login...........
+2025-12-10 19:07:06 INFO  CreateCaseTest:19 - ..........Starting Verify_Create_Case...........
+2025-12-10 19:07:06 INFO  CreateCaseTest:22 - Validate case creation
+2025-12-10 19:07:10 INFO  CreateCaseTest:24 - Select Create Case menu
+2025-12-10 19:07:12 INFO  CreateCaseTest:31 - Create Case page successfully loaded
+2025-12-10 19:07:12 INFO  CreateCaseTest:32 - Select entity from entity dropdown
+2025-12-10 19:07:14 INFO  CreateCaseTest:34 - Select Bulk Test Entity
+2025-12-10 19:07:15 INFO  CreateCaseTest:36 - Enter case name
+2025-12-10 19:07:17 INFO  CreateCaseTest:38 - Select Owner Names
+2025-12-10 19:07:17 INFO  CreateCaseTest:40 - Select case status
+2025-12-10 19:07:18 INFO  CreateCaseTest:42 - Select case Priority
+2025-12-10 19:07:19 INFO  CreateCaseTest:44 - Select case start date
+2025-12-10 19:07:19 INFO  CreateCaseTest:46 - Select case group
+2025-12-10 19:07:20 INFO  CreateCaseTest:48 - Enter caseID
+2025-12-10 19:07:22 INFO  CreateCaseTest:50 - Select Relevant Period
+2025-12-10 19:07:22 INFO  CreateCaseTest:53 - Enter registration No
+2025-12-10 19:07:23 INFO  CreateCaseTest:55 - Click on next button
+2025-12-10 19:07:39 INFO  CreateCaseTest:58 - Select laws
+2025-12-10 19:07:40 INFO  CreateCaseTest:60 - Click on save button
+2025-12-10 19:07:59 INFO  CreateCaseTest:64 - Select regions
+2025-12-10 19:08:00 INFO  CreateCaseTest:66 - Click on save button
+2025-12-10 19:08:20 INFO  CreateCaseTest:68 - Confirm pop-up
+2025-12-10 19:08:20 INFO  CreateCaseTest:76 - ..........Finished Verify_Login...........

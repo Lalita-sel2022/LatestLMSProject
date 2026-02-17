@@ -7,7 +7,6 @@
         <methods>
           <include name="teardown"/>
           <include name="startUp"/>
-          <include name="VerifyThatTheCreatedCaseIsDisplayedInTheList"/>
           <include name="loginMethod"/>
           <include name="VerifyThatTheCaseIsSuccessfullyCreated"/>
         </methods>

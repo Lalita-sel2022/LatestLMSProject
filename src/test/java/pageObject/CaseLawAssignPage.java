@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class CaseLawAssignPage {
      WebDriver driver;
@@ -40,6 +41,12 @@ public class CaseLawAssignPage {
  	
  	@FindBy(xpath="//div[@class='chosen-drop']/ul/li")
  	public List<WebElement> standardTagOptions;
+ 	
+ 	@FindBy(xpath="//li[contains(@class,'active')]/a[text()='Law/Provision']")
+ 	public WebElement lawMappingHeader;
+ 	
+ 	@FindBy(xpath="//h4[contains(text(),'Case law mapped successfully.')]")
+ 	public WebElement popupMessage;
 	
 	public void selectAllUncheckedLaws() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -81,5 +88,23 @@ public class CaseLawAssignPage {
              break;
 		 }
 	}}
+    
+    public boolean isLawMappingPageDisplayed()
+    {
+    	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+    	return wait.until(ExpectedConditions.visibilityOf(lawMappingHeader))
+                .isDisplayed();
+    }
+    
+    public void validateLawMappingSuccessPopup() {
+    	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(popupMessage));
+
+        String actualMessage = popupMessage.getText();
+        String expectedMessage = "Case law mapped successfully.";
+
+        Assert.assertEquals(actualMessage, expectedMessage,
+                "Law mapping success message is incorrect");
+    }
     
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-10T16:00:17 IST" name="Suite" finished-at="2025-12-10T16:00:57 IST" duration-ms="40493">
+  <suite started-at="2026-02-17T10:50:54 IST" name="Suite" finished-at="2026-02-17T10:51:09 IST" duration-ms="14702">
     <groups>
     </groups>
-    <test started-at="2025-12-10T16:00:17 IST" name="Test on Firefox" finished-at="2025-12-10T16:00:57 IST" duration-ms="40493">
+    <test started-at="2026-02-17T10:50:54 IST" name="Test on Firefox" finished-at="2026-02-17T10:51:09 IST" duration-ms="14702">
       <class name="testClasses.CreateCaseTest">
-        <test-method is-config="true" signature="startUp(java.lang.String)[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:17 IST" name="startUp" finished-at="2025-12-10T16:00:21 IST" duration-ms="3600" status="PASS">
+        <test-method is-config="true" signature="startUp(java.lang.String)[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2026-02-17T10:50:54 IST" name="startUp" finished-at="2026-02-17T10:50:58 IST" duration-ms="3912" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method is-config="true" signature="loginMethod()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:21 IST" name="loginMethod" finished-at="2025-12-10T16:00:23 IST" duration-ms="2257" status="PASS">
+        <test-method is-config="true" signature="loginMethod()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2026-02-17T10:50:58 IST" name="loginMethod" finished-at="2026-02-17T10:51:00 IST" duration-ms="2210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method signature="VerifyThatTheCaseIsSuccessfullyCreated()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:23 IST" name="VerifyThatTheCaseIsSuccessfullyCreated" finished-at="2025-12-10T16:00:57 IST" duration-ms="34246" status="PASS">
+        <test-method signature="VerifyThatTheCaseIsSuccessfullyCreated()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2026-02-17T10:51:00 IST" name="VerifyThatTheCaseIsSuccessfullyCreated" finished-at="2026-02-17T10:51:08 IST" duration-ms="8023" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-139-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db61b11e0a70b6e51e6297cb4d699619, isElementDisplayed {id=f.0C729B8DC4D79FD07EB5630B8386D60D.d.C8B2EEE52A5E3A932A5ADB174C012F3C.e.318}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/profile_1771305655695}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37123/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (db61b11e0a70b6e51e6297cb4d699619)] -> xpath: //div[contains(text(),'Nothing selected')]]
+Session ID: db61b11e0a70b6e51e6297cb4d699619]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: stale element reference: stale element not found in the current frame
+  (Session info: chrome=133.0.6943.141)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-139-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db61b11e0a70b6e51e6297cb4d699619, isElementDisplayed {id=f.0C729B8DC4D79FD07EB5630B8386D60D.d.C8B2EEE52A5E3A932A5ADB174C012F3C.e.318}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.141, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /tmp/profile_1771305655695}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37123/devtoo..., se:cdpVersion: 133.0.6943.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (db61b11e0a70b6e51e6297cb4d699619)] -> xpath: //div[contains(text(),'Nothing selected')]]
+Session ID: db61b11e0a70b6e51e6297cb4d699619
+at org.testng.Assert.fail(Assert.java:110)
+at testClasses.CreateCaseTest.VerifyThatTheCaseIsSuccessfullyCreated(CreateCaseTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyThatTheCaseIsSuccessfullyCreated -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2025-12-10T16:00:57 IST" name="teardown" finished-at="2025-12-10T16:00:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testClasses.CreateCaseTest@18df8434]" started-at="2026-02-17T10:51:09 IST" name="teardown" finished-at="2026-02-17T10:51:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

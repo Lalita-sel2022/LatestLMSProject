@@ -45,7 +45,10 @@ public static Properties pro;
 		{
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--user-data-dir=/tmp/profile_" + System.currentTimeMillis());
+			   options.addArguments("--headless=new"); 
+		        options.addArguments("--no-sandbox");
+		        options.addArguments("--disable-dev-shm-usage");
+		        options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);
 //			driver= new ChromeDriver();
 			driver.manage().window().maximize();

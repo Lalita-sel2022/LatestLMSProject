@@ -21,13 +21,13 @@ public class CaseLawAssignPage {
     	 PageFactory.initElements(driver, this);
      }
      
-     @FindBy(xpath="//ul[@class='taw_tree_box']/li[@class='parent_li']/span")
- 	public WebElement parentLaw;
+     @FindBy(xpath="//span[normalize-space()='Law']")
+ 	public WebElement lawNode;
  	
- 	@FindBy(xpath="//input[@class='c_box l_box ']")
- 	public List<WebElement> allLaws;
+ 	@FindBy(xpath="//ul/li/input[@class='c_box l_box  ']")
+ 	public List<WebElement> allLawCheckboxes;
  	
- 	@FindBy(xpath="(//div[@class='region_ap_to'])[3]")
+ 	@FindBy(xpath="//div[@class='region_ap_to']/button[@id='save']")
  	public WebElement topSaveScrollbar;
  	
  	@FindBy(xpath="(//div[@class='region_ap_to']//button[@id='save'])[1]")
@@ -48,20 +48,35 @@ public class CaseLawAssignPage {
  	@FindBy(xpath="//h4[contains(text(),'Case law mapped successfully.')]")
  	public WebElement popupMessage;
 	
-	public void selectAllUncheckedLaws() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(parentLaw)).click();
-//		lawOption.click();
-		for(WebElement law:allLaws)
-		{
-			if(!law.isSelected())
-			{
-				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", law);
-				Thread.sleep(500); // optional small wait
-				law.click();
-			}
-		}
-	}
+ 	public void selectAllUncheckedLaws() {
+
+ 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+ 	    JavascriptExecutor js = (JavascriptExecutor) driver;
+
+ 	    // Expand Law node
+ 	    wait.until(ExpectedConditions.elementToBeClickable(lawNode)).click();;
+// 	    js.executeScript("arguments[0].click();", lawNode);
+
+ 	    // Wait for checkbox presence
+ 	    List<WebElement> checkboxes = wait.until(
+ 	        ExpectedConditions.visibilityOfAllElements(allLawCheckboxes)
+ 	    );
+
+ 	    // Select all unchecked
+ 	    for (WebElement cb : checkboxes) {
+
+ 	        if (!cb.isSelected()) {
+
+ 	            js.executeScript(
+ 	                "arguments[0].scrollIntoView({block:'center'});", cb
+ 	            );
+
+ 	            js.executeScript("arguments[0].click();", cb);
+ 	        }
+ 	    }
+ 	}
+
+
     public void clickLawSaveButton()
     {
     	JavascriptExecutor js = (JavascriptExecutor) driver;

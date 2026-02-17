@@ -32,7 +32,7 @@ public class CreateCaseTest extends BaseClass
 	logger.info("Select entity from entity dropdown");
 	cp.selectEntity("Regression Entity");
 	logger.info("Select Bulk Test Entity");
-	cp.setCaption("Case 101");
+	cp.setCaption("Case 102");
 	logger.info("Enter case name");
 	cp.selectOwnerName("lalita Saini","User_Lalita 1");
 	logger.info("Select Owner Names");
@@ -40,7 +40,7 @@ public class CreateCaseTest extends BaseClass
 	logger.info("Select case status");
 	cp.selectCasePriority("High");
 	logger.info("Select case Priority");
-	cp.selectStartDate("17", "Feb", "2026");
+	cp.selectStartDate("17", "February", "2026");
 	logger.info("Select case start date");
 	cp.selectCaseGroup("Regression Child Case Group");
 	logger.info("Select case group");

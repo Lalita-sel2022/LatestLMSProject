@@ -45,10 +45,20 @@ public static Properties pro;
 		{
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			   options.addArguments("--headless=new"); 
-		        options.addArguments("--no-sandbox");
-		        options.addArguments("--disable-dev-shm-usage");
-		        options.addArguments("--remote-allow-origins=*");
+			String jenkins = System.getenv("JENKINS_HOME");
+			
+			System.out.println(jenkins);
+			
+			if (jenkins != null) {
+			    // Jenkins settings
+			    options.addArguments("--headless=new");
+			    options.addArguments("--no-sandbox");
+			    options.addArguments("--disable-dev-shm-usage");
+			    options.addArguments("--remote-allow-origins=*");
+			} else {
+			    // Local machine
+			    options.addArguments("--start-maximized");
+			}
 			driver = new ChromeDriver(options);
 //			driver= new ChromeDriver();
 			driver.manage().window().maximize();
